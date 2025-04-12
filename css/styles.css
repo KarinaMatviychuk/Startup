@@ -866,19 +866,21 @@ nav a:hover {
 }
 
 .popup-content {
+    margin-top: 50px;
     background: #fff;
-    padding: 30px;
-    max-width: 35%;
-    width: 90%;
+    padding: 50px;
+    max-height: 70%;
+    max-width: 60%;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
     text-align: center;
     position: relative;
+    overflow-y: auto;
 }
 
 .popup-content p {
     font-size: 15px;
-    line-height: 21px;
+    line-height: 24px;
     font-weight: 500;
     font-family: "Roboto Slab";
 }
@@ -1238,7 +1240,11 @@ footer {
 }
 
 
-
+@media(min-width: 375px) {
+    .photo-people img {
+        padding: 0 10px 0 0;
+    }
+}
 
 @media(min-width: 425px) {
     .latest-works ul {
@@ -1390,6 +1396,10 @@ footer {
 
     #register-button {
         margin-left: 35%;
+    }
+
+    .photo-people img {
+        padding: 0;
     }
 }
 
